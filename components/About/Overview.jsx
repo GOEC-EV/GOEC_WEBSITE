@@ -34,9 +34,9 @@ export default function Overview() {
 						<h1 className={styles.HadingText}>Overview</h1>
 						<p className={styles.dictationText}>
 							GO EC Auto Tech PVT LTD is on a mission to build the foundation for the EV Revolution in India. 
-							We&apos;sre strategically placing electric vehicle chargers nationwide, making it convenient for EV drivers to 
+							We&apos;re strategically placing electric vehicle chargers nationwide, making it convenient for EV drivers to 
 							travel long distances without the fear of running out of battery power. Partnering with a variety of 
-							businesses we&apos;sre installing chargers in their properties. As our network of charging stations expands, 
+							businesses we&apos;re installing chargers in their properties. As our network of charging stations expands, 
 							the EV market in India is surging, reducing concerns about charging accessibility and driving increased 
 							EV adoption..
 						</p>
