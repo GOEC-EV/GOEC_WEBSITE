@@ -1,0 +1,75 @@
+.hadingBg {
+	cursor: pointer;
+	margin-bottom: 20px;
+	background: var(--bgDark);
+	box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.04), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0287542),
+		0px 22.3363px 17.869px rgba(0, 0, 0, 0.0238443), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.02),
+		0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0112458);
+	border-radius: 8px;
+}
+.hadingDiv {
+	padding: 15px 20px;
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+.hadarText {
+	width: 90px;
+	position: relative;
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	margin: 0 auto;
+	z-index: 1 !important;
+}
+.hadarText::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	bottom: -5px;
+	right: -12px;
+	background: #007aff;
+	border-radius: 2px;
+}
+.hading {
+	max-width: 80%;
+
+	text-align: justify;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
+.Text {
+	font-weight: 400;
+	max-width: 75%;
+	font-size: 17px;
+	line-height: 150%;
+	color: #b8b8b8;
+}
+
+@media screen and (max-width: 1024px) {
+	.hading {
+		max-width: 90%;
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.hading {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.Text {
+		max-width: 95%;
+		font-size: 13px !important;
+		padding-right: 30px;
+	}
+}

@@ -1,0 +1,176 @@
+.warper {
+	background-color: #2c2c2c;
+	width: 100vw;
+	padding: 30px 0;
+}
+.hadarText {
+	position: relative;
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	margin: 0 auto;
+	z-index: 1 !important;
+	margin-bottom: 2rem;
+}
+.hadarText::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	bottom: -5px;
+	right: -12px;
+	background: #007aff;
+	border-radius: 2px;
+}
+.dateText {
+	font-family: var(--ff-head);
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(255, 255, 255, 0.3);
+}
+.cardHadingText {
+	font-family: var(--ff-head);
+	font-size: 32px;
+	line-height: 1.4;
+	color: rgba(255, 255, 255, 0.96);
+	margin-top: 5px;
+}
+.cardNameText {
+	font-family: var(--ff-head);
+	font-size: 12px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.96);
+	margin-top: 10px;
+}
+.dictationText {
+	font-family: var(--ff-head);
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.96);
+}
+.linkText {
+	font-family: var(--ff-head);
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+	transition: all 5ms;
+}
+.linkTextBtn {
+	position: relative;
+	font-family: var(--ff-head);
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+	transition: all 5ms;
+}
+.CardBtnText {
+	position: relative;
+	width: 80px;
+	white-space: nowrap;
+}
+.CardBtnText::before {
+	content: '';
+	position: absolute;
+	width: 20%;
+	height: 2px;
+	left: 0;
+	bottom: -5px;
+	background-color: #fff;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.CardBtnIcon {
+	position: absolute;
+	top: 20%;
+	right: 5%;
+	font-weight: 300;
+	font-size: 25px;
+	opacity: 0;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.blogTexts:hover .CardBtnText::before {
+	width: 100%;
+}
+.blogTexts:hover .CardBtnIcon {
+	opacity: 50;
+}
+.images {
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+.logo {
+	grid-column: 1/1;
+	grid-row: 1/1;
+	opacity: 0;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: 0.7s ease;
+}
+.logo.active {
+	animation: fadeIn 0.75s ease forwards;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.imageSlider {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 1rem 2rem;
+	background-color: rgba(0, 0, 0, 0.25);
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.prevIcon,
+.nextIcon {
+	cursor: pointer;
+}
+.prevIcon svg,
+.nextIcon svg {
+	color: #ffffff;
+	font-size: 22px;
+}
+.prevIcon svg path,
+.nextIcon svg path {
+	stroke: #ffffff;
+}
+.dots {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.dot {
+	height: 4px;
+	width: 1rem;
+	background-color: #4f4f4f;
+	border-radius: 1rem;
+	transition: width 0.75s ease;
+	cursor: pointer;
+}
+.dot.active {
+	width: 2rem;
+	background-color: #ffffff;
+}

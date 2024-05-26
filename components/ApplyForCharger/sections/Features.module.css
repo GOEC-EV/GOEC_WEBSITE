@@ -1,0 +1,24 @@
+.line {
+	height: 5px;
+	width: 190px;
+	border-radius: 1rem;
+	display: inline-block;
+	background: linear-gradient(270deg, #0b5d95 0%, #3297db 98.96%);
+}
+
+.card img {
+	transition: 0.5s ease;
+}
+
+.card:hover img {
+	transform: scale(1.15);
+}
+
+.button a div {
+	border-radius: 0 !important;
+}
+
+.blueText {
+	color: #0047c3;
+	font-weight: 600;
+}

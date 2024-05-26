@@ -1,0 +1,41 @@
+.links {
+	padding: 1.75rem 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.links svg {
+	color: #8b8a8f;
+}
+
+.links svg:last-child {
+	display: none;
+}
+
+.link {
+	color: #1d1e26;
+	font-size: 16px;
+	line-height: 1.25;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-color: #1d1e26;
+}
+
+.link:last-of-type {
+	font-weight: 500;
+}
+
+.links.black .link {
+	color: #ffffff;
+	text-decoration-color: #ffffff;
+}
+
+.links.black svg {
+	color: #8b8a8f;
+}

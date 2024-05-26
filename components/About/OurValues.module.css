@@ -1,0 +1,14 @@
+.warper {
+	background-color: var(--bg);
+	width: 100vw;
+	padding: 80px 0;
+}
+.hading {
+	font-family: var(--ff-head);
+	font-size: 32px;
+	line-height: 140%;
+	letter-spacing: -0.02em;
+	color: #13f2ad;
+	padding-left: 20px;
+	border-left: 4px solid #007aff;
+}

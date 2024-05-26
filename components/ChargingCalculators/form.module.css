@@ -1,0 +1,55 @@
+.form_container select,
+.form_container input {
+	border-radius: 12px;
+	border: 2px solid var(--Color-Light-Light-3, #dfdfe6);
+	background: var(--Color-Light-Light, #fcfcfd);
+	width: 100%;
+	height: 40px;
+	padding: 0 10px;
+}
+
+.grey_scrollbar::-webkit-scrollbar,
+.form_container select::-webkit-scrollbar {
+	width: 8px;
+}
+.grey_scrollbar::-webkit-scrollbar-track,
+.form_container select::-webkit-scrollbar-track {
+	background: #fcfcfd;
+}
+.grey_scrollbar::-webkit-scrollbar-thumb,
+.form_container select::-webkit-scrollbar-thumb {
+	background-color: #dfdfe6;
+	border-radius: 20px;
+}
+.loader {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 5px solid #0047c2;
+	animation: spin 1.5s linear infinite;
+}
+.loader::after {
+	content: '';
+	width: 85%;
+	height: 85%;
+	background: -webkit-linear-gradient(
+		45deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 40%,
+		rgba(255, 255, 255, 0.7) 60%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-5%, -5%);
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

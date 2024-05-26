@@ -1,0 +1,112 @@
+[
+	{
+		"name": "Home",
+		"url": "/"
+	},
+	{
+		"name": "Company",
+		"url": "/",
+		"menu": [
+			{
+				"name": "About us",
+				"url": "/about"
+			},
+			{
+				"name": "Contact us",
+				"url": "/contactUs"
+			},
+			{
+				"name": "Careers",
+				"url": "/careers"
+			},
+			{
+				"name": "Privacy policy",
+				"url": "/privacy-policy"
+			},
+			{
+				"name": "Terms & conditions",
+				"url": "/terms-and-conditions"
+			}
+		]
+	},
+	{
+		"name": "Solutions",
+		"url": "/solutions",
+		"menu": [
+			{
+				"name": "Solution overview",
+				"url": "/solutions"
+			},
+			{
+				"name": "Partner with us",
+				"url": "/apply-for-charger",
+				"menu": [
+					{
+						"name": "COCO",
+						"url": "/partner-with-us/coco"
+					},
+					{
+						"name": "FOCO",
+						"url": "/partner-with-us/foco"
+					},
+					{
+						"name": "Invest in COCO",
+						"url": "/partner-with-us/invest-in-coco"
+					}
+				]
+			},
+			{
+				"name": "Shop",
+				"url": "/shop",
+				"menu": [
+					{
+						"name": "GO EC Smartcharge",
+						"url": "https://rzp.io/l/55pc1tZNg"
+					},
+					{
+						"name": "AC chargers",
+						"url": "/shop/ac-chargers"
+					},
+					{
+						"name": "DC chargers",
+						"url": "/shop/dc-chargers"
+					}
+				]
+			},
+			{
+				"name": "Apply for charging stations",
+				"url": "/apply-for-charger"
+			},
+			{
+				"name": "GOEC App",
+				"url": "/app-page"
+			}
+		]
+	},
+	{
+		"name": "Explore chargers",
+		"url": "/ev-charging-stations"
+	},
+	{
+		"name": "Resources",
+		"url": "/",
+		"menu": [
+			{
+				"name": "Blogs",
+				"url": "/blogs"
+			},
+			{
+				"name": "News",
+				"url": "/news"
+			},
+			{
+				"name": "How to charge",
+				"url": "/How-to-charge"
+			},
+			{
+				"name": "FAQs",
+				"url": "/faqs"
+			}
+		]
+	}
+]

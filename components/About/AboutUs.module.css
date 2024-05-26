@@ -1,0 +1,28 @@
+.warper {
+	width: 100%;
+}
+.About {
+	font-family: var(--ff-head);
+	font-size: 32px;
+	position: relative;
+	line-height: 100%;
+	color: #333333;
+	padding-top: 25px;
+}
+.text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 31px;
+	color: #1b1b1b;
+}
+.CardsImg {
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+.CardsImg:hover {
+	transform: scale(1.2);
+	opacity: 100;
+}

@@ -1,0 +1,138 @@
+.warper {
+	background-color: var(--bg);
+	position: relative;
+	overflow: hidden;
+	background-image: url(/images/bg/road-map.svg);
+	background-position: center bottom;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	max-height: 1750px;
+}
+
+.title,
+.title * {
+	font-size: clamp(1.6rem, 2.1vw, 2.1rem);
+	line-height: 1.4;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: var(--ff-head);
+}
+
+.titleColor {
+	/* color: var(--hoverLink);
+	 */
+	color: cyan;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+.dot {
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	background-color: #007aff;
+	margin-left: 5px;
+}
+
+.subtitle {
+	font-family: var(--ff-head);
+	font-size: 18px;
+	line-height: 1.5;
+	color: #333333;
+	font-weight: 500;
+}
+
+.dateless {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #4f4f4f;
+	margin-top: 10px;
+}
+
+.LearnBtn {
+	margin-top: auto;
+	margin-bottom: 1rem;
+}
+
+.LearnBtn,
+.LearnBtn * {
+	color: #1b1b1b;
+	font-family: var(--ff-head);
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.LearnBtn *::before {
+	background-color: #1b1b1b;
+}
+
+.ColorBoard {
+	content: '';
+	position: absolute;
+	width: 92%;
+	height: 10px;
+	left: 4%;
+	bottom: -10px;
+	border-radius: 0.5rem;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	background: rgb(221, 217, 217);
+	z-index: 0;
+}
+
+.codeTitle {
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 1.5rem;
+	line-height: 1.5;
+	color: #ffffff;
+}
+
+.codeSubTitle {
+	margin-left: 44px;
+	font-family: var(--ff-head);
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #4f4f4f;
+}
+
+.codeHading {
+	padding-left: 40px;
+	border-left: 4px solid #007aff;
+	color: #ffffff;
+	line-height: 1.4;
+	font-family: var(--ff-head);
+	font-size: clamp(1.6rem, 2.1vw, 2.1rem);
+	font-weight: 500;
+	margin-top: 1rem;
+}
+
+.codeHading * {
+	line-height: inherit;
+	color: inherit;
+	font-weight: inherit;
+	display: inline-block;
+	color: #13f2ad;
+}
+
+.codeDiv {
+	padding-left: 40px;
+}
+
+.thunder {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	width: 75%;
+	max-width: 1440px;
+	height: 1350px;
+}
+
+.mobile {
+	height: 700px;
+	width: auto;
+	margin-left: -2rem;
+}

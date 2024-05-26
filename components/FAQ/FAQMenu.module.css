@@ -1,0 +1,56 @@
+.warper {
+	height: 100%;
+	background-color: var(--bgDark);
+	padding-bottom: 20px;
+}
+.FilterDiv {
+	padding: 10px 15px;
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Filter {
+	font-family: var(--ff-head);
+	font-size: 24px;
+	line-height: 29px;
+	color: #ffffff;
+}
+.clearFilter {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	color: #007aff;
+	cursor: pointer;
+}
+.type {
+	padding: 30px 15px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 15px;
+	color: #787878;
+	cursor: pointer;
+}
+.Link {
+	width: 100%;
+	white-space: nowrap;
+	padding: 20px 15px;
+	background: var(--bg);
+	font-weight: 400;
+	font-size: clamp(0.7rem, 1.2vw, 0.95rem);
+	line-height: 15px;
+	color: #ffffff;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.activeLink,
+.Link:hover {
+	background: #007aff;
+}
+
+@media screen and (max-width: 767px) {
+	.Link {
+		padding: 15px;
+		margin: 0;
+	}
+}

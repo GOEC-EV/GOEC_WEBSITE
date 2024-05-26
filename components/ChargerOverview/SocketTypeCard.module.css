@@ -1,0 +1,13 @@
+.cardBody {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+}
+.cardIconSvg img {
+	height: 40px;
+	width: auto;
+}

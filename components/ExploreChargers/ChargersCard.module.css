@@ -1,0 +1,102 @@
+.warper {
+	overflow: hidden;
+	box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.04), 0px 1.6711px 7.93775px rgba(0, 0, 0, 0.0287542),
+		0px 0.893452px 4.2439px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 2.37909px rgba(0, 0, 0, 0.02),
+		0px 0.266004px 1.26352px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 0.525779px rgba(0, 0, 0, 0.0112458);
+	border-radius: 10px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.CardsImg {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 2/1;
+	overflow: hidden;
+}
+.CardsImg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s ease;
+}
+.warper:hover .CardsImg img {
+	transform: scale(1.2);
+}
+.cardBody {
+	padding: 10px 12px;
+	background-color: #fff;
+	padding-bottom: 1rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.cardTextBody {
+	padding-bottom: 10px;
+}
+.cardText {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	color: #4f4f4f;
+}
+.cardSubText {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	color: #828282;
+	margin-top: 5px;
+}
+.cardIconBody {
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	display: flex;
+	margin-top: auto;
+	justify-content: space-between;
+}
+.cardIconText {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #4f4f4f;
+}
+.cardIconDiv {
+	padding: 10px 0;
+}
+.cardIcons {
+	padding: 10px 0;
+	display: flex;
+	width: 100%;
+	gap: 5px;
+}
+.cardIcons img {
+	height: 16px;
+	width: auto;
+}
+.btn {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 32px;
+	width: 90%;
+	height: 40px;
+	background: #ffffff;
+	border: 1px solid #007aff;
+	border-radius: 8px;
+}
+.CardsStar {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	display: flex;
+	padding: 3px 10px;
+	gap: 6px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #f2994a;
+	border-radius: 15px;
+	background-color: #fff;
+}

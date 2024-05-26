@@ -1,0 +1,81 @@
+.warper {
+	background: #f7f8fb;
+}
+.resultsText {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	letter-spacing: -0.02em;
+	color: #1b1b1b;
+}
+.SwitchBtn {
+	padding: 1px 0;
+
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: justify;
+	border-bottom: 2px solid #007aff;
+	color: #007aff;
+	cursor: pointer;
+}
+.search {
+	color: #4f4f4f;
+	width: 100%;
+	padding: 0.8rem 1rem;
+	margin: 0.6rem 0;
+	border: 0.5px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.04), 0px 1.6711px 7.93775px rgba(0, 0, 0, 0.0287542),
+		0px 0.893452px 4.2439px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 2.37909px rgba(0, 0, 0, 0.02),
+		0px 0.266004px 1.26352px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 0.525779px rgba(0, 0, 0, 0.0112458);
+	font-size: 1rem;
+	border-radius: 200px;
+	outline: none;
+	transition: all 0.5s;
+	background: #fff;
+	outline: none;
+}
+.search::placeholder {
+	color: #828282;
+}
+.search:focus {
+	border: 1px solid #007aff;
+}
+.searchIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	position: absolute;
+	right: 10px;
+	top: 18px;
+	width: 35px;
+	height: 35px;
+	background: #2f80ed;
+	border-radius: 300px;
+	color: #fff;
+	cursor: pointer;
+}
+.selectBox {
+	background-color: #fff;
+	background-image: url(../../public/arraw.svg);
+	background-repeat: no-repeat;
+	background-position: right 1.1rem center;
+	background-size: 16px 12px;
+	width: 100%;
+	padding: 0.8rem 1rem;
+	margin: 0.6rem 0;
+	border: 0.5px solid rgba(0, 0, 0, 0.2) !important;
+	box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.04), 0px 1.6711px 7.93775px rgba(0, 0, 0, 0.0287542),
+		0px 0.893452px 4.2439px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 2.37909px rgba(0, 0, 0, 0.02),
+		0px 0.266004px 1.26352px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 0.525779px rgba(0, 0, 0, 0.0112458);
+	font-size: 1rem;
+	border-radius: 200px !important;
+	outline: none !important;
+	transition: all 0.5s;
+	appearance: none;
+}
+.selectBox:focus {
+	outline: none !important;
+	border: 0.5px solid #007aff !important;
+}

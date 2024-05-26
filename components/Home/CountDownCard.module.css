@@ -1,0 +1,11 @@
+.warper {
+	background-color: #fff;
+	width: 100vw;
+	padding: 55px 0;
+}
+
+.value {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}

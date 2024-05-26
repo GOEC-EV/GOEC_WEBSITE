@@ -1,0 +1,108 @@
+.warper {
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+	border-radius: 10px;
+	overflow: hidden;
+	min-height: 350px;
+	height: 100%;
+}
+.imgDiv {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+.imgDiv * {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.imgDiv img {
+	transition: 0.7s ease;
+}
+
+.warper:hover img {
+	transform: scale(1.2);
+}
+.bg {
+	background: #222222;
+	display: flex;
+	flex-direction: column;
+}
+.dateText {
+	font-family: var(--ff-head);
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(255, 255, 255, 0.3);
+}
+.cardHadingText {
+	font-family: var(--ff-head);
+	font-size: 23px;
+	line-height: 1.4;
+	color: rgba(255, 255, 255, 0.96);
+	margin-top: 8px;
+}
+
+.dictationText {
+	font-family: 'Inter';
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.56);
+	margin: 1rem 0;
+}
+
+.linkTextBtn {
+	position: relative;
+	font-family: var(--ff-head);
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+	transition: all 5ms;
+	margin-top: auto;
+}
+.CardBtnText {
+	position: relative;
+	width: 80px;
+	white-space: nowrap;
+}
+.CardBtnText::before {
+	content: '';
+	position: absolute;
+	width: 20%;
+	height: 2px;
+	left: 0;
+	bottom: -5px;
+	background-color: #fff;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.CardBtnIcon {
+	position: absolute;
+	top: 20%;
+	right: 5%;
+	font-weight: 300;
+	font-size: 25px;
+	opacity: 0;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.warper:hover .CardBtnText::before {
+	width: 100%;
+}
+.warper:hover .CardBtnIcon {
+	opacity: 50;
+}
+
+@media screen and (max-width: 767px) {
+	.imgDiv {
+		max-height: 250px;
+	}
+}

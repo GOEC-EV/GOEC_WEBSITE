@@ -1,0 +1,43 @@
+.linkText {
+	position: relative;
+	font-family: var(--ff-head);
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+	transition: all 5ms;
+}
+.CardBtnText {
+	position: relative;
+	width: 80px;
+	white-space: nowrap;
+}
+.CardBtnText::before {
+	content: '';
+	position: absolute;
+	width: 20%;
+	height: 2px;
+	left: 0;
+	bottom: -5px;
+	background-color: #fff;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.CardBtnIcon {
+	position: absolute;
+	top: 20%;
+	right: 5%;
+	font-weight: 300;
+	font-size: 25px;
+	opacity: 0;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.linkText:hover .CardBtnText::before {
+	width: 100%;
+}
+.linkText:hover .CardBtnIcon {
+	opacity: 50;
+}

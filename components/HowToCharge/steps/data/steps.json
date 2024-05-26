@@ -1,0 +1,56 @@
+[
+	{
+		"name": "Step 01",
+		"text": "If you still haven't downloaded the app, download it from the App store or Play store.",
+		"image": "/images/steps/image1.png",
+		"count": "/images/steps/count1.svg"
+	},
+	{
+		"name": "Step 02",
+		"text": "Signup for the app and enter your Electric vehicle details.",
+		"image": "/images/steps/image2.png",
+		"count": "/images/steps/count2.svg"
+	},
+	{
+		"name": "Step 03",
+		"text": "Locate your nearest charging station from the GO EC app. You can even reserve your spot with the slot option.",
+		"image": "/images/steps/image3.png",
+		"count": "/images/steps/count3.svg"
+	},
+	{
+		"name": "Step 04",
+		"text": "Once you reach the charging station, Open your EV's charge port and select the appropriate connector from the GO EC app or charger screen.",
+		"image": "/images/steps/image4.png",
+		"count": "/images/steps/count4.svg"
+	},
+	{
+		"name": "Step 05",
+		"text": "Plug your connector into the charge port until it clicks firmly into place.",
+		"image": "/images/steps/image5.png",
+		"count": "/images/steps/count5.svg"
+	},
+	{
+		"name": "Step 06",
+		"text": "To initiate your charge, tap the GO EC app screen. You can also use your GO EC RFID card to initiate a charge. You can buy an RFID card by clicking here.",
+		"image": "/images/steps/image6.png",
+		"count": "/images/steps/count6.svg"
+	},
+	{
+		"name": "Step 07",
+		"text": "When ready to hit the road, return to the charger and stop your session on the charger screen.",
+		"image": "/images/steps/image7.png",
+		"count": "/images/steps/count7.svg"
+	},
+	{
+		"name": "Step 08",
+		"text": "You'll receive a mobile alert if your session ends while you're away from your car.",
+		"image": "/images/steps/image8.png",
+		"count": "/images/steps/count8.svg"
+	},
+	{
+		"name": "Step 09",
+		"text": "To disconnect your car, push the button forward to release the connector and replace it in its holster.",
+		"image": "/images/steps/image9.png",
+		"count": "/images/steps/count9.svg"
+	}
+]

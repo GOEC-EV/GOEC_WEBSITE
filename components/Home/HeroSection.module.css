@@ -1,0 +1,143 @@
+.wrapper {
+	position: relative;
+	min-height: 527px;
+	background-color: var(--bgDark);
+}
+
+.bgVideo {
+	height: auto;
+	width: 100%;
+	z-index: 1;
+}
+
+.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.content > * {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.topArea,
+.bottomArea {
+	z-index: 2;
+	position: relative;
+	width: 100%;
+}
+.bottomArea {
+	background-color: rgba(51, 51, 51, 0.5);
+}
+.topArea,
+.topArea {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.TextBody,
+.TextBody * {
+	font-family: var(--ff-head);
+	font-size: clamp(1.9rem, 4.1vw, 4.1rem) !important;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #ffffff;
+}
+
+.SubtitleText {
+	display: flex;
+	align-items: center;
+}
+
+.SubtitleText p {
+	font-size: 18px clamp(0.8rem, 1.8vw, 1.3rem);
+	font-weight: 400;
+	color: #ffffff;
+	max-width: 605px;
+	line-height: 1.5;
+}
+
+.btn1,
+.btn2 {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	height: 146px;
+	background: #007aff;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn1 {
+	background: #4f4f4f;
+}
+
+.CardBtnText {
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.CardBtnIcon {
+	position: absolute;
+	top: 40%;
+	right: 10%;
+	font-weight: 300;
+	font-size: 35px;
+	opacity: 0;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.btn1:hover .CardBtnText,
+.btn2:hover .CardBtnText {
+	transform: translateX(-30%);
+}
+
+.btn1:hover .CardBtnIcon,
+.btn2:hover .CardBtnIcon {
+	opacity: 50;
+}
+
+/* .TextBodyColor {
+	position: relative;
+	color: var(--hoverLink);
+} */
+
+.TextBodyColor2 {
+	color: var(--hoverLink);
+}
+
+
+.BodyWarper {
+	max-width: 1200px !important;
+	margin: 0 auto !important;
+}
+
+@media screen and (max-width: 767px) {
+	.wrapper {
+		min-height: 240px;
+	}
+	.btn1,
+	.btn2 {
+		height: 70px;
+	}
+
+	.bottomArea {
+		z-index: 2;
+		position: relative;
+		width: 100%;
+		padding: 0px !important;
+	}
+	.TextBody {
+		max-width: 380px;
+		font-size: 3rem;
+	}
+}

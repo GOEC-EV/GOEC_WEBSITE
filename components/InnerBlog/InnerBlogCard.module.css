@@ -1,0 +1,12 @@
+.warper {
+	padding-bottom: 2rem;
+}
+
+.CardsImg {
+	cursor: pointer;
+	overflow: hidden;
+	transition: 0.7s ease;
+}
+.warper:hover .CardsImg {
+	transform: scale(1.2);
+}

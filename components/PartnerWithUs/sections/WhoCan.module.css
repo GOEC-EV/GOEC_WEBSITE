@@ -1,0 +1,7 @@
+.line {
+	width: 190px;
+	height: 5px;
+	background: linear-gradient(270deg, #0b5d95 0%, #3297db 98.96%);
+	display: inline-block;
+	border-radius: 1rem;
+}

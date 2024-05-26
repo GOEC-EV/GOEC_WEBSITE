@@ -1,0 +1,57 @@
+.warper {
+	background-color: #2c2c2c;
+	width: 100vw;
+	padding: 40px 0;
+}
+.Hading {
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 101%;
+	color: #fff;
+}
+.FAQ {
+	margin: 10px auto;
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 101%;
+	display: flex;
+	align-items: center;
+	color: #1b1b1b;
+}
+.ColorText {
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+	line-height: 150%;
+	display: flex;
+	align-items: center;
+	color: #1b1b1b;
+	padding: 28px 40px;
+	background: #13f2ad;
+}
+
+.hading {
+	margin-bottom: 15px;
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: center;
+	color: #000000;
+}
+.ColorBtn {
+	padding: 15px 25px;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 150%;
+	text-align: center;
+	color: #ffffff;
+	white-space: nowrap;
+	background: #007aff;
+}

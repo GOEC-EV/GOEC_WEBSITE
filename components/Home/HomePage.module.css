@@ -1,0 +1,25 @@
+.warper {
+	background-color: #fff;
+	width: 100%;
+	padding: 55px 0;
+}
+
+.Hading {
+	font-size: 32px;
+	line-height: 1.4;
+	font-family: var(--ff-head);
+	font-weight: 500;
+	color: #1b1b1b;
+}
+
+.dot {
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	background-color: #007aff;
+	margin-left: 5px;
+}
+
+.blogCharge {
+	background: linear-gradient(229.7deg, #ffffff 26.76%, #f2f2f2 111.55%);
+}

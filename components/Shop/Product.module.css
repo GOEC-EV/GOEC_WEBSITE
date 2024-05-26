@@ -1,0 +1,95 @@
+.mainWarper {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+.warper {
+	display: flex;
+	background: #4f4f4f;
+	position: relative;
+	flex-grow: 0;
+	width: 100%;
+}
+.divText {
+	position: absolute;
+	width: 50px;
+	height: 40px;
+	left: 6%;
+	top: 5%;
+	background: #ffffff;
+	box-shadow: 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.divIcon {
+	position: absolute;
+	right: 6%;
+	bottom: 8%;
+}
+.titleDiv {
+	padding: 14px 8px;
+	background: #333333;
+}
+.title {
+	font-family: var(--ff-head);
+	font-size: 14px;
+	line-height: 150%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.price {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 29px;
+	color: #13f2ad;
+	margin-top: 5px;
+}
+.Btn {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	white-space: nowrap;
+	color: rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+}
+
+.BtnIcon {
+	font-weight: 300;
+	font-size: 18px;
+	opacity: 0;
+	color: #fff;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.mainWarper:hover .BtnIcon {
+	opacity: 100;
+}
+
+.CardsImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 340px;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 2rem;
+}
+.CardsImg img {
+	height: 70%;
+	width: auto;
+	transition: 0.5s ease;
+}
+.mainWarper:hover .CardsImg img {
+	transform: scale(1.2);
+	opacity: 100;
+}

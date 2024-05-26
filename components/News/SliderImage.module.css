@@ -1,0 +1,34 @@
+.dote {
+	display: flex;
+}
+.container,
+.container * {
+	outline: none;
+	border: none;
+}
+
+.container [class~='slick-dots'] {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	margin-top: 1rem;
+}
+
+.container [class~='slick-dots'] li button {
+	display: none;
+}
+
+.container [class~='slick-dots'] li {
+	height: 12px;
+	width: 12px;
+	background-color: #1c1b1f;
+	border-radius: 2rem;
+	border: 3px solid #1c1b1f;
+	box-sizing: border-box;
+}
+
+.container [class~='slick-dots'] [class~='slick-active'] {
+	transform: scale(1.35);
+	background-color: transparent;
+}

@@ -1,0 +1,119 @@
+.container {
+	position: relative;
+	height: 100%;
+}
+
+.link {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	padding: 10px 20px;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 1.5;
+	border-bottom: 5px solid transparent;
+	position: relative;
+	white-space: nowrap;
+}
+
+.arrow {
+	width: 9px;
+	height: auto;
+	aspect-ratio: 1.75/1;
+	display: inline-block;
+	clip-path: polygon(100% 0, 0 0, 50% 100%);
+	background-color: #ffffff;
+	transition: 0.25s ease;
+}
+
+.tick {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(10px, -50%);
+	background-color: rgb(161, 250, 222);
+	display: none;
+	clip-path: polygon(100% 50%, 0 0, 0 100%);
+	aspect-ratio: 1/1.75;
+	width: 12px;
+}
+
+.container:hover > .window {
+	display: flex;
+}
+
+.container:hover .arrow {
+	transform: rotate(180deg);
+}
+
+.container:hover > .link {
+	border-color: #13f2ad;
+}
+
+.window .link:hover .tick {
+	display: inline-block;
+}
+
+.window {
+	position: absolute;
+	min-width: 200px;
+	display: none;
+	flex-direction: column;
+	background-color: #ffffff;
+	z-index: 10;
+	padding: 10px 0;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.075);
+}
+
+.window > * {
+	padding: 0 10px;
+}
+
+.window .arrow {
+	display: none;
+}
+
+.window a {
+	color: #1b1b1b;
+	height: 44px;
+	padding: 10px;
+	border: none;
+}
+
+.window a:hover,
+.window a[class~='active'] {
+	background-color: rgb(161, 250, 222);
+}
+
+.window a[class~='active'] .tick {
+	display: inline-block;
+}
+
+.top {
+	bottom: 100%;
+	left: 0;
+}
+
+.right {
+	left: 100%;
+	top: -10px;
+	background-color: #fafafa;
+	z-index: 4;
+}
+
+.right a:hover {
+	background-color: #f2f2f2;
+}
+
+.bottom {
+	top: 100%;
+	left: 0;
+}
+
+.left {
+	right: 100%;
+	top: 0;
+}

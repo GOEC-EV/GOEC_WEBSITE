@@ -1,0 +1,57 @@
+.warper {
+	width: 100%;
+	padding: 100px 0;
+}
+
+.hadarText {
+	font-family: var(--ff-head);
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.25;
+	color: #bdbdbd;
+	margin-top: 10px;
+}
+
+.hadarSubText {
+	font-family: var(--ff-head);
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.25;
+	color: #1b1b1b;
+	text-transform: capitalize;
+}
+
+.dot {
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	border-radius: 0px;
+	background-color: #007aff;
+}
+
+.line {
+	height: 5px;
+	width: 200px;
+	border-radius: 10px;
+	background: linear-gradient(270deg, #0b5d95 0%, #3297db 98.96%);
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.subText {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #333333;
+	margin-top: 1rem;
+}
+
+.CardsImg {
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+/*.CardsImg:hover {
+	transform: scale(1.2);
+	opacity: 100;
+}*/

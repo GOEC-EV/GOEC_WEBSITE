@@ -1,0 +1,77 @@
+.socialLink {
+	padding: 6px 8px;
+	background: #bdbdbd;
+	border: 1px solid #bdbdbd;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 6px;
+	font-size: 20px;
+	color: #1b1b1b;
+	cursor: pointer;
+}
+.CopyLink {
+	padding: 4px 10px;
+	background: #bdbdbd;
+	border: 1px solid #bdbdbd;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 6px;
+	font-size: 18px;
+	color: #1b1b1b;
+	cursor: pointer;
+}
+.CopiedBtn {
+	padding: 4px 10px;
+	background: var(--hoverLink);
+	border: 1px solid var(--hoverLink);
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 6px;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.TextLink {
+	background-color: #96c8ff;
+	padding: 8px 16px;
+	border-radius: 5rem;
+	font-weight: 400;
+	font-size: 16px;
+	color: #0061cb;
+	cursor: pointer;
+}
+.content {
+	width: 100%;
+}
+
+.content * {
+	color: #ffffff;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
+.content strong,
+.content b {
+	font-weight: 700;
+}
+
+.content em,
+.content i {
+	font-style: italic;
+}
+
+.content a {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	color: #007aff;
+	display: inline-block;
+}
+
+.content h1,
+.content strong {
+	font-size: 24px;
+}

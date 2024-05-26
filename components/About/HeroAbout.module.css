@@ -1,0 +1,40 @@
+.warper {
+	background: #333333;
+	width: 100vw;
+	padding: 150px 0;
+	background-color: var(--bgDark);
+	background-image: url(../../public/images/bg/bgImg2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+/* .HeroDiv {
+} */
+.HeroText {
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 140%;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
+.HeroSubText {
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 140%;
+	letter-spacing: -0.02em;
+	color: #13f2ad;
+}
+@media screen and (max-width: 767px) {
+	.HeroText {
+		font-size: 32px;
+		line-height: 140%;
+	}
+	.HeroSubText {
+		font-size: 25px;
+		line-height: 140%;
+	}
+}

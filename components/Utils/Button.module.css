@@ -1,0 +1,42 @@
+.CardBtn {
+	position: relative;
+	margin: 0 auto;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+	white-space: nowrap;
+	padding: 22px 60px;
+	margin: 0 auto;
+	background: #007aff;
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 13px;
+	color: rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+}
+
+.CardBtnText {
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.CardBtnIcon {
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	transform: translateY(-50%);
+	font-weight: 300;
+	font-size: 22px;
+	opacity: 0;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.CardBtn:hover .CardBtnText {
+	transform: translateX(-20%);
+}
+
+.CardBtn:hover .CardBtnIcon {
+	opacity: 50;
+}

@@ -1,0 +1,143 @@
+.wrapper {
+	overflow: hidden;
+	width: 100vw !important;
+	background-color: var(--bgDark);
+	box-sizing: border-box;
+}
+.logo {
+	width: 180px;
+	height: auto;
+}
+.pad {
+	padding: 15px 0 !important;
+}
+.pad2 {
+	padding: 30px 0 !important;
+}
+.hadingText {
+	font-family: var(--ff-head);
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+}
+.subHadingText {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #d1d1d1;
+	margin: 5px 0 2px;
+}
+.listHadar {
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	color: #ffffff;
+}
+.socialLink {
+	padding: 4px 5px;
+	background: #4f4f4f !important;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.btn {
+	width: 30%;
+	height: 56px;
+	background: #007aff;
+	border-radius: 8px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.btn span {
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	transition: 0.7s ease;
+}
+.btn:hover span {
+	margin-right: 3rem;
+}
+.btn svg {
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	transform: translateY(-50%);
+	opacity: 0;
+	font-size: 20px;
+	transition: 0.7s ease;
+}
+.btn:hover svg {
+	opacity: 1;
+}
+.emailInput {
+	width: 70%;
+	padding: 10px 15px;
+	background: #2f2f2f;
+	border: 1px solid #4d4d4d;
+	outline: none;
+	border-radius: 8px;
+	color: #fff;
+}
+.listText {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #bdbdbd;
+	transition: 0.15s;
+	transition-timing-function: ease;
+}
+.listText:hover {
+	color: var(--hoverLink);
+}
+.title {
+	font-family: var(--ff-head);
+	font-size: 18px;
+	line-height: 38px;
+	color: #ffffff;
+}
+.LinkText {
+	font-style: normal;
+	white-space: nowrap;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 35px;
+	color: #828282;
+	transition: 0.15s ease;
+}
+
+.LinkText:hover {
+	color: #13f2ad;
+}
+
+.FooterBottom {
+	height: 60px;
+	width: 100%;
+	background-color: var(--bg);
+}
+.FooterBottomWrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.FooterBottomText {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+	.FooterBottom {
+		display: none;
+	}
+}

@@ -1,0 +1,43 @@
+.warper {
+	height: 350px;
+	background-color: #fff;
+}
+.AppHading {
+	padding: 40px 0;
+	font-family: var(--ff-head);
+	font-size: 32px;
+	margin-top: 40px;
+	line-height: 1.5;
+	letter-spacing: -0.02em;
+	color: #1b1b1b;
+}
+.AppHading span {
+	font-size: inherit;
+	line-height: inherit;
+	font-family: inherit;
+}
+.ColorAppHading {
+	color: #007aff;
+}
+.DoteAppHading {
+	position: relative;
+}
+.DoteAppHading::after {
+	content: '';
+	position: absolute;
+	top: -6px;
+	right: -16px;
+	height: 8px;
+	width: 8px;
+	background-color: #007aff;
+}
+
+@media screen and (max-width: 767px) {
+	.warper {
+		height: 420px;
+		background-color: #fff;
+	}
+	.AppHading {
+		padding: 25px 0;
+	}
+}

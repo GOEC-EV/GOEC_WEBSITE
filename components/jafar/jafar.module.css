@@ -1,0 +1,45 @@
+.warper {
+	background-color: var(--bg);
+	width: 100vw;
+	padding: 100px 0;
+	cursor: pointer;
+}
+
+.CardsImg {
+	overflow: hidden;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+	border-radius: 10px;
+}
+.CardsImg:hover {
+	/*transform: scale(1.2);*/
+	opacity: 100;
+}
+
+.HadingText {
+	margin-top: 32px;
+	font-family: var(--ff-head);
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 100%;
+	color: #ffffff;
+	margin-bottom: 15px;
+	position: relative;
+}
+.HadingText1 {
+	font-family: var(--ff-head);
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 100%;
+	color: #ffffff;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.dictationText {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #bdbdbd;
+	margin-bottom: 28px;
+}

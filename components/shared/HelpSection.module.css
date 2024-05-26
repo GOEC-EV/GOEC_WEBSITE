@@ -1,0 +1,10 @@
+.bgArt::before {
+	content: '';
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #13f2ad;
+}

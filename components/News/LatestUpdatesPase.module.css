@@ -1,0 +1,76 @@
+.warper {
+	padding: 80px 0;
+	background-color: #ffffff;
+}
+.Text {
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.25;
+	color: #333333;
+	margin-bottom: 1rem;
+}
+.SubText {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #1b1b1b;
+	padding-bottom: 10px;
+}
+.name {
+	font-size: 14px;
+	line-height: 1.25;
+	color: #000000;
+	margin-top: 1rem;
+}
+.nameLink {
+	font-size: 14px;
+	line-height: 1.25;
+	color: #1325f1;
+	cursor: pointer;
+}
+.UpdatesText {
+	padding: 15px 30px;
+	margin-bottom: 30px;
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.25;
+	color: #ffffff;
+	background: #007aff;
+}
+
+.CardsImg {
+	overflow: hidden;
+}
+.CardsImg img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1.5/1;
+	object-fit: cover;
+}
+.body {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	line-clamp: 8;
+	-webkit-line-clamp: 8;
+	overflow: hidden;
+}
+.newsList::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+.button a div {
+	background-color: #f2f2f2;
+	border-radius: 0;
+	color: #333333;
+	font-family: var(--ff-head);
+	font-weight: 500;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.warper {
+		padding-top: 20px;
+	}
+}

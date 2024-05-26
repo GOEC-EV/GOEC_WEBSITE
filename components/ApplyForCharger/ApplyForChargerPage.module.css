@@ -1,0 +1,23 @@
+.features {
+	padding: 100px 0;
+	padding-bottom: 0;
+	background: linear-gradient(229.7deg, #ffffff 26.76%, #f2f2f2 111.55%);
+}
+
+.button a div {
+	border-radius: 0;
+}
+
+.dot {
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	background-color: #007aff;
+	margin-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	.features {
+		padding: 0;
+	}
+}

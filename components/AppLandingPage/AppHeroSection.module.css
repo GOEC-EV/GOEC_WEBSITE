@@ -1,0 +1,118 @@
+.warper {
+	min-height: 700px;
+	padding-top: 50px;
+	position: relative;
+	background-color: var(--bgDark);
+	background-image: url(../../public/images/bg/bgImg2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.container_wrapper {
+	margin-left: 180px !important;
+}
+.Hading {
+	margin-bottom: 100px;
+	max-width: 550px;
+	font-family: var(--ff-head);
+	font-size: clamp(1.6rem, 3.8vw, 2.6rem);
+	line-height: 48px;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+}
+.img {
+	z-index: 20;
+	display: flex;
+	justify-content: flex-end;
+}
+.colorDiv {
+	height: 80%;
+	width: 40%;
+	position: absolute;
+	right: 0;
+	bottom: -150px;
+	background: #007aff;
+	z-index: 1;
+}
+.BtnWarper {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 84px;
+	background: #333333;
+}
+.containerWrapper {
+	max-width: 1350px !important;
+	margin: 0 auto !important;
+}
+.Btn {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: -0.408px;
+	color: #ffffff;
+	width: 330px;
+	height: 84px;
+	background: #007aff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.Btn p {
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	transition: 0.7s ease;
+}
+.Btn:hover p {
+	margin-left: -3rem;
+}
+.Btn svg {
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	transform: translateY(-50%);
+	color: #ffffff;
+	opacity: 0;
+	font-size: 25px;
+	transition: 0.7s ease;
+}
+.Btn:hover svg {
+	opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+	.warper {
+		min-height: 890px !important;
+	}
+	.img {
+		justify-self: flex-end;
+		max-width: 450px;
+	}
+	.colorDiv {
+		height: 50% !important;
+		width: 55%;
+		right: -20px;
+		bottom: -80px;
+	}
+	.Btn {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.warper {
+		min-height: 550px;
+	}
+	.colorDiv {
+		width: 50%;
+		height: 80%;
+		bottom: -130px;
+	}
+	.BtnWarper {
+		z-index: 20000 !important;
+	}
+}

@@ -1,0 +1,143 @@
+.warper {
+	background-color: #fff;
+	width: 100vw;
+	padding: 70px 0;
+}
+
+.Hading {
+	font-family: var(--ff-head);
+	font-size: 32px;
+	line-height: 1.25;
+	color: #1b1b1b;
+}
+.blueText {
+	color: #0047c3;
+	font-weight: 600;
+}
+.dot {
+	height: 8px;
+	width: 8px;
+	display: inline-block;
+	margin-left: 5px;
+	background-color: #007aff;
+}
+
+.SubHading {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #333333;
+	margin-top: 12px;
+}
+
+.CardBody {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	background: #333333;
+	padding: 25px;
+	cursor: pointer;
+	height: 100%;
+}
+
+.CardHading {
+	font-family: var(--ff-head);
+	font-weight: 500;
+	font-size: 23px;
+	color: rgba(255, 255, 255, 0.96);
+}
+
+.CardSubHading {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.CardText {
+	font-size: 15px;
+	line-height: 1.25;
+	color: #bdbdbd;
+	margin-top: 1rem;
+}
+
+.CardIcon {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.CardIcon svg {
+	height: 140px;
+	width: auto;
+}
+
+.CardBtn {
+	width: 70px;
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.95);
+	transition: all 0.5s;
+}
+
+.CardBtn:hover {
+	color: var(--hoverLink);
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.button p {
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: var(--ff-head);
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.95);
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.button p::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 20%;
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.95);
+	transition: 0.7s ease;
+	border-radius: 1rem;
+}
+
+.CardBody:hover .button p::after {
+	width: 100%;
+}
+
+.button svg {
+	height: 20px;
+	width: auto;
+	color: rgba(255, 255, 255, 0.95);
+	opacity: 0;
+	transition: 0.7s ease;
+}
+
+.CardBody:hover .button svg {
+	opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+	.Hading {
+		font-size: 24px;
+	}
+	.CardSubHading {
+		margin-top: 10px;
+	}
+	.CardIcon {
+		margin: 1.5rem 0;
+	}
+}

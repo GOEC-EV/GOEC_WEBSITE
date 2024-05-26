@@ -1,0 +1,101 @@
+.warper {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	z-index: 3;
+}
+.warper2 {
+	max-width: 400px;
+}
+.AppHading {
+	padding: 10px 0;
+	font-family: var(--ff-head);
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 122%;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
+.ColorAppHading {
+	font-family: var(--ff-head);
+	color: #13f2ad;
+}
+.DoteAppHading {
+	font-family: var(--ff-head);
+	position: relative;
+}
+.DoteAppHading::after {
+	content: '';
+	position: absolute;
+	bottom: 1px;
+	right: -12px;
+	height: 5px;
+	width: 5px;
+	background-color: #13f2ad;
+}
+.hadingText {
+	font-family: var(--ff-head);
+	font-weight: 500;
+	font-size: 21px;
+	padding: 5px 0;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+.subHadingText {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	color: #fff;
+}
+.AppSubHading {
+	font-family: var(--ff-head);
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.4;
+	color: #fff;
+	margin-bottom: 3rem;
+}
+.AppSubHading span {
+	color: #13f2ad;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+.hadingIcon {
+	background-color: #007aff;
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+	border-radius: 50%;
+	font-family: var(--ff-head);
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+.socialLink {
+	padding: 4px 5px;
+	background: #4f4f4f !important;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.warper {
+		justify-content: start;
+		width: 100%;
+	}
+	.warper2 {
+		max-width: 100% !important;
+		padding: 30px 15px 0;
+	}
+	.AppSubHading br {
+		display: none;
+	}
+}

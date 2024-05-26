@@ -1,0 +1,17 @@
+.warper {
+	padding-top: 400px;
+	padding-bottom: 100px;
+	background-color: var(--bgDark);
+}
+.container_wrapper {
+	margin: 0 auto;
+	max-width: 900px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.container_wrapper > * {
+	grid-column: 1/1;
+	grid-row: 1/1;
+}

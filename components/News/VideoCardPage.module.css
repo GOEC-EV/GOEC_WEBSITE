@@ -1,0 +1,28 @@
+.warper {
+	background-color: #2c2c2c;
+}
+.UpdatesText {
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffffff;
+	line-height: 1.5;
+	background-color: #007aff;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	height: 76px;
+	padding: 0 1rem;
+}
+.UpdatesText svg {
+	height: 30px;
+	width: auto;
+}
+
+@media screen and (max-width: 767px) {
+	.warper {
+		padding-top: 40px;
+	}
+	.player > * {
+		aspect-ratio: 1.25/1;
+	}
+}

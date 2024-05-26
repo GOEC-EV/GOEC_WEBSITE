@@ -1,0 +1,124 @@
+.warper {
+	background-color: #333333;
+	width: 100%;
+	padding: 80px 0;
+	background-image: url(/images/bg/world-map.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.hading {
+	font-family: var(--ff-head);
+	font-size: 32px;
+	line-height: 101%;
+	color: #ffffff;
+	position: relative;
+}
+.warper2 {
+	width: 675px;
+	padding: 0 15px;
+	margin-top: 3rem;
+}
+.input {
+	width: 100%;
+	background: #2f2f2f;
+	border: 1px solid #4d4d4d;
+	color: #bdbdbd;
+	border-radius: 8px;
+	padding: 10px 15px;
+	margin: 10px 0;
+	transition: all 0.5s;
+}
+.input:focus {
+	outline: none !important;
+	border: 1px solid #007aff !important;
+}
+.selectBox {
+	background-image: url(/arraw2.svg);
+	background-repeat: no-repeat;
+	background-position: right 1.1rem center;
+	background-size: 16px 12px;
+	width: 100%;
+	color: #bdbdbd;
+	background: #2f2f2f;
+	border: 1px solid #4d4d4d;
+	border-radius: 8px;
+	padding: 10px 15px;
+	margin: 10px 0;
+	outline: none !important;
+	transition: all 0.5s;
+	appearance: none;
+}
+.selectBox:focus {
+	outline: none !important;
+	border: 1px solid #007aff !important;
+}
+.CardBtn {
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+	white-space: nowrap;
+	padding: 21px 52px;
+	margin: 0 auto;
+	background: #007aff;
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 13px;
+	color: rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+}
+.CardBtnText {
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+.CardBtnIcon {
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	transform: translateY(-50%);
+	font-weight: 400;
+	font-size: 22px;
+	opacity: 0;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+
+.CardBtn:hover .CardBtnText {
+	transform: translateX(-30%);
+}
+.CardBtn:hover .CardBtnIcon {
+	opacity: 50;
+}
+
+.error input,
+.error select {
+	border-color: #ff0000cc !important;
+}
+
+.error p {
+	color: #ff0000cc !important;
+	margin-top: -5px;
+	margin-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	.hading {
+		text-align: center;
+		line-height: 1.4;
+	}
+	.warper {
+		background-size: cover;
+		padding: 60px 0;
+	}
+	.warper2 {
+		width: 100%;
+		padding: 0px;
+	}
+	.input,
+	.selectBox {
+		height: 56px;
+	}
+}

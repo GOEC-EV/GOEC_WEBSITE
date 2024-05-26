@@ -1,0 +1,48 @@
+.textDiv {
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.text {
+	padding-left: 20px;
+	margin: 20px 0;
+	border-left: 5px solid #007aff;
+	font-family: var(--ff-head);
+	font-size: clamp(0.8rem, 1.2vw, 1.8rem);
+	line-height: 140%;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
+.img {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Subtext {
+	font-family: var(--ff-head);
+	font-size: clamp(0.8rem, 2.1vw, 2.1rem);
+	line-height: 1.5;
+	color: #ffffff;
+}
+
+.active {
+	animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.textDiv {
+		max-width: 250px !important;
+	}
+}

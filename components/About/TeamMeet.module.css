@@ -1,0 +1,81 @@
+.warper {
+	background-color: #fff;
+	padding: 60px 0;
+}
+.hading {
+	font-family: var(--ff-head);
+	font-size: 28px;
+	line-height: 100%;
+	color: #333333;
+	padding-bottom: 30px;
+}
+.name {
+	font-family: var(--ff-head);
+	font-size: 18px;
+	line-height: 180%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #333333;
+}
+.position {
+	font-family: var(--ff-head);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 136%;
+	color: #4f4f4f;
+}
+.Card {
+	position: relative;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+	cursor: pointer;
+}
+.CardLink {
+	position: absolute;
+	left: 15%;
+	opacity: 0;
+	bottom: 65px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-family: var(--ff-head);
+	font-size: 18px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #fff;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+	cursor: pointer;
+}
+.Linkedin {
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	color: #fff;
+	font-family: var(--ff-head);
+	font-size: 22px;
+	cursor: pointer;
+}
+.Card:hover .CardLink {
+	opacity: 100;
+}
+.CardsImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 90;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+.CardsImg img {
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+.Card:hover .CardsImg {
+	transform: scale(1.2);
+	opacity: 100;
+}

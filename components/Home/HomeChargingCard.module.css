@@ -1,0 +1,33 @@
+.warper {
+	width: 100%;
+	padding-bottom: 55px;
+}
+
+.heading {
+	font-size: 32px;
+	font-family: var(--ff-head);
+	color: #1b1b1b;
+	padding-bottom: 2rem;
+}
+.blueText {
+	color: #0047c3;
+	font-weight: 600;
+}
+
+.dot {
+	height: 8px;
+	width: 8px;
+	display: inline-block;
+	background-color: #007aff;
+	margin-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	.heading {
+		font-size: 24px;
+		padding-bottom: 1rem;
+	}
+	.warper {
+		padding-bottom: 40px;
+	}
+}

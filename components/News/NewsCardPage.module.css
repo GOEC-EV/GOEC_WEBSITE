@@ -1,0 +1,96 @@
+.Text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.25;
+	color: #ffffff;
+	margin-top: 1.5rem;
+}
+.title {
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-size: 32px;
+	line-height: 122%;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
+.DateTitle {
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 13px;
+	letter-spacing: -0.247273px;
+	color: #ffffff;
+}
+.More {
+	cursor: pointer;
+	font-family: var(--ff-head);
+	display: flex;
+	gap: 10px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 13px;
+	letter-spacing: -0.24px;
+	color: #ffffff;
+}
+.Industrial {
+	position: absolute;
+	text-transform: capitalize;
+	left: 12px;
+	top: 12px;
+	padding: 10px 22px;
+	font-family: var(--ff-head);
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 13px;
+	letter-spacing: -0.24px;
+	background: rgba(0, 0, 0, 0.24);
+	color: #ffffff;
+}
+.SubText {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-top: 1rem;
+	color: #ffffff;
+}
+
+.CardsImg {
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+.Card:hover .CardsImg {
+	cursor: pointer;
+	transform: scale(1.2);
+	opacity: 100;
+}
+
+.button {
+	display: none;
+	margin-top: 1.5rem;
+}
+
+.button a {
+	background-color: transparent;
+	color: #007aff;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+	.title {
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	.SubText,
+	.SubText * {
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.button {
+		display: block;
+	}
+}

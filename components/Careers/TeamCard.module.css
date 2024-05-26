@@ -1,0 +1,45 @@
+.warper {
+	padding: 80px 0;
+}
+.hading {
+	width: 190px;
+	position: relative;
+	font-family: var(--ff-head);
+	font-size: 24px;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	color: #333333;
+}
+.hading::before {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	bottom: 0px;
+	right: -8px;
+	background: #007aff;
+	border-radius: 2px;
+}
+.subTitle {
+	padding: 20px 0;
+	max-width: 680px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	margin-top: 1rem;
+	color: #333333;
+}
+.icon {
+	padding: 8px;
+	border-radius: 50%;
+	background: #635bff15;
+}
+.IconText {
+	font-weight: 400;
+	white-space: nowrap;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	color: #333333;
+}

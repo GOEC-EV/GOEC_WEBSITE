@@ -1,0 +1,71 @@
+.warper {
+	padding: 80px 0;
+	background: #f7f8fb;
+	width: 100vw;
+}
+.hadarText {
+	position: relative;
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 100%;
+	color: #333333;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	z-index: 1 !important;
+}
+.hadarText::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	bottom: 5px;
+	right: -16px;
+	background: #007aff;
+	border-radius: 2px;
+}
+.hadarText::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	bottom: -10px;
+	left: 0px;
+	background: #007aff;
+	border-radius: 2px;
+}
+
+.dictationText {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #333333;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #333333;
+}
+.linkText {
+	font-family: var(--ff-head);
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+	transition: all 5ms;
+}
+.linkText:hover {
+	color: var(--hoverLink);
+}
+.CardsImg {
+	overflow: hidden;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+.CardsImg:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	opacity: 100;
+}

@@ -1,0 +1,28 @@
+.CardBtnText {
+	display: inline-block;
+	white-space: nowrap;
+	position: relative;
+	font-family: var(--ff-head);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	color: #ffffff;
+}
+.CardBtnText::before {
+	content: '';
+	position: absolute;
+	width: 20%;
+	height: 2px;
+	left: 0;
+	bottom: -5px;
+	background-color: #fff;
+	transition: all 0.7s !important;
+	transition-timing-function: var(--animationDirection) !important;
+}
+.linkText {
+	cursor: pointer;
+}
+.linkText:hover .CardBtnText::before {
+	width: 100%;
+}

@@ -1,0 +1,11 @@
+.bgImg {
+	min-height: 350px;
+	padding-top: 50px;
+	position: relative;
+	background-color: var(--bgDark);
+	background-image: url(../../public/images/Frame148.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	object-fit: fill;
+	background-size: cover;
+}
