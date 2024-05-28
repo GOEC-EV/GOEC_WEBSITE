@@ -201,7 +201,7 @@ figure {
 
 .dot {
 	display: inline-block;
-	background-color: #007aff;
+	background-color: var(--primary-color);
 	margin-left: 5px;
 	height: var(--height);
 	width: var(--height);
