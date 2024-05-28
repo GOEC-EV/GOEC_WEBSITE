@@ -24,7 +24,7 @@ export default function TeamMeet() {
 		},
 		{
 			id: '3',
-			img: '/images/profile/MsNeenaElizabeth.jpg',
+			img: '/images/profile/B.jpg',
 			name: 'Ms. Zara Elizabeth',
 			position: 'Director',
 			link: 'https://www.linkedin.com/in/neena-elizabeth/',
