@@ -46,7 +46,7 @@ export default function Charging() {
 				<div className='w-full grid md:grid-cols-4 gap-[18px] mt-[50px] md:mt-[60px]'>
 					{data.map((item, index) => (
 						<article
-							className='border border-sky-[#0000001F] w-full p-[25px] pt-[40px] flex flex-col items-center'
+							className='border w-full p-[25px] pt-[40px] flex flex-col items-center'
 							key={`charging-${index}`}>
 							<figure className='h-[180px] w-[180px] flex justify-center relative'>
 								<Image

@@ -15,7 +15,7 @@ export default function Features() {
 				</h1>
 				<span className={styles.line}></span>
 				<article className='mt-10 grid md:grid-cols-4 gap-[18px]'>
-					<div className={`w-full bg-[#13F2AD] p-[18px] flex flex-col items-center pt-8 ${styles.card}`}>
+					<div className={`w-full border p-[18px] flex flex-col items-center pt-8 ${styles.card}`}>
 						<div className='h-[190px] w-[190px] flex items-center justify-center'>
 							<Image
 								src={feature1}
@@ -33,7 +33,7 @@ export default function Features() {
 							supercharging station on your premises.
 						</p>
 					</div>
-					<div className={`w-full bg-[#13F2AD] p-[18px] pt-8 ${styles.card}`}>
+					<div className={`w-full border p-[18px] pt-8 ${styles.card}`}>
 						<div className='h-[190px] w-auto flex items-center justify-center'>
 							<Image
 								src={feature2}
@@ -51,7 +51,7 @@ export default function Features() {
 							in <span className='font-[700]'>GO EC</span> EV charging stations.
 						</p>
 					</div>
-					<div className={`w-full bg-[#13F2AD] p-[18px] pt-8 ${styles.card}`}>
+					<div className={`w-full border p-[18px] pt-8 ${styles.card}`}>
 						<div className='h-[190px] w-auto flex items-center justify-center'>
 							<Image
 								src={feature3}
