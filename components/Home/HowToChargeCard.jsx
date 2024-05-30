@@ -10,25 +10,25 @@ export default function HowToChargeCard() {
 		{
 			id: '1',
 			number: '01',
-			img: '/images/XMLID1.svg',
+			img: '/images/key.svg',
 			text: 'Locate your nearest charging station from the GO EC app.',
 		},
 		{
 			id: '2',
 			number: '02',
-			img: '/images/XMLID2.svg',
+			img: '/images/car.svg',
 			text: 'CONNECT THE CHARGER TO YOUR EV',
 		},
 		{
 			id: '3',
 			number: '03',
-			img: '/images/XMLID3.svg',
+			img: '/images/rfid.svg',
 			text: 'USE THE GO EC APP / RFID CARD TO START CHARGING.',
 		},
 		{
 			id: '4',
 			number: '04',
-			img: '/images/XMLID4.svg',
+			img: '/images/phn.svg',
 			text: 'Charge and pay conveniently.',
 		},
 	];

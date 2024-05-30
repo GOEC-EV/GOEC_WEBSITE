@@ -23,7 +23,7 @@ export default function AppLandingPage() {
 						<div className=' pt-12 pb-44'>
 							<p className={styles.AppHading}>
 								Our app also includes a variety of{' '}
-								<span className='inline-block h-[8px] w-[8px] md:h-[12px] md:w-[12px] bg-[#007AFF] mb-6'></span>{' '}
+								<span className='inline-block h-[8px] w-[8px] md:h-[12px] md:w-[12px] bg-[#0047C2] mb-6'></span>{' '}
 								<br /> features to make your{' '}
 								<span className='text-[#007AFF]'>
 									charging <br /> experience

@@ -26,14 +26,14 @@
 	height: 5px;
 	width: 5px;
 	border-radius: 0px;
-	background-color: #007aff;
+	background-color: #0047C2;
 }
 
 .line {
 	height: 5px;
 	width: 200px;
 	border-radius: 10px;
-	background: linear-gradient(270deg, #0b5d95 0%, #3297db 98.96%);
+	background: #0047C2;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
