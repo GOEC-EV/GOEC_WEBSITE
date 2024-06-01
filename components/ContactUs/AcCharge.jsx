@@ -22,8 +22,8 @@ export default function AcCharge() {
 						<h1 className={styles.hadingIcon}>
 							<BsTelephoneFill />
 						</h1>
-						<Link target='_blank' href='https://wa.me/919778687615'>
-							<h1 className={styles.hadingText}>+91 9778687615</h1>
+						<Link target='_blank' href='https://wa.me/919447536644'>
+							<h1 className={styles.hadingText}>+91 +919447536644</h1>
 						</Link>
 					</div>
 					<div className=' py-3'>
