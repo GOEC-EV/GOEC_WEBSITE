@@ -11,10 +11,12 @@
 	background: #2D2A2A;
 	padding: 25px;
 	gap: 1rem;
+	position: relative;
 }
 .CardNumber {
 	padding: 12px 16px;
 	margin-bottom: 20px;
+	gap: 12px;
 	background: #1b1b1b;
 	border-radius: 4px;
 	font-family: var(--ff-head);

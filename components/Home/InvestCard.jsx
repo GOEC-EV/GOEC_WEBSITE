@@ -400,7 +400,7 @@ export default function InvestCard() {
 		{
 			id: 3,
 			hading: 'Invest in COCO',
-			SubHading: 'Invest in Company-owned Company operated.',
+			SubHading: 'Invest in prime locations',
 			text: 'This is an option for people who do not have the property to set up a charging station but want to take advantage of the EV boom.',
 			svg: (
 				<svg width='128' height='112' viewBox='0 0 128 112' fill='none' xmlns='http://www.w3.org/2000/svg'>
