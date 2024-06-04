@@ -9,11 +9,16 @@ import textToHtml from 'html-react-parser';
 import getDate from '@/utilities/getDate';
 import { useTags } from '@/hooks/api';
 import Head from 'next/head';
+import HtmlContent from './HtmlContent';
+import cleanHtml from './CleanHtml';
 
 export default function InnerBlogPage({ type, data, dataList }) {
 	const [copyUrl, setCopyUrl] = useState();
 	const { title } = useRouter().query;
 	const tagsApi = useTags();
+
+
+
 
 	useEffect(() => {
 		setCopyUrl('');
@@ -61,9 +66,9 @@ export default function InnerBlogPage({ type, data, dataList }) {
 			{tagsApi.data?.length ? (
 				<div className='  container_wrapper  '>
 					<div className=' pt-16 pb-12'>
-						<div className='text-[#FFFFFF] font-[700] text-[32px] leading-normal'>
+						<h1 className='text-[#FFFFFF] font-[700] text-[32px] leading-normal'>
 							{textToHtml(data.title.rendered)}
-						</div>
+						</h1>
 						<p className='mt-2 text-[#F2F2F2]'>
 							By<span className=' text-blue-500'> {data._embedded.author[0].name} </span>/ {getDate(data.date)} /
 							<span className=' text-blue-500'> {type}</span>
@@ -79,7 +84,7 @@ export default function InnerBlogPage({ type, data, dataList }) {
 								alt=''
 							/>
 							<br />
-							<div className={styles.content}>{textToHtml(data.content.rendered)}</div>
+							<HtmlContent html={data.content.rendered} />
 							<br />
 							<div className=' w-full flex flex-col md:items-center'>
 								<div className=' flex  gap-3 py-2'>

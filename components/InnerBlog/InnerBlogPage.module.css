@@ -57,8 +57,27 @@
 .content strong,
 .content b {
 	font-weight: 700;
+	
+}
+.content h1 {
+	font-size: 40px;
+	padding: 40px 0px;
 }
 
+.content h2 {
+	font-size: 30px;
+	padding: 30px 0px;
+}
+
+.content h3 {
+	font-size: 20px;
+	padding: 20px 0px;
+}
+
+.content h4 {
+	font-size: 10px;
+	padding: 10px 0px;
+}
 .content em,
 .content i {
 	font-style: italic;
@@ -74,4 +93,10 @@
 .content h1,
 .content strong {
 	font-size: 24px;
+}
+
+
+.content img {
+	width: 80%;
+
 }
