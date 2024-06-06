@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 import encodeTitle from '@/utilities/encodeTitle';
 
 const Mapview = ({ data,cordinates }) => {
-	console.log('data', data);
 	const { asPath } = useRouter();
 	const [selectedCenter, setSelectedCenter] = useState(null);
 	const { isLoaded } = useJsApiLoader({
@@ -23,9 +22,6 @@ const Mapview = ({ data,cordinates }) => {
 		lat: Number(cordinates.lat),
 		lng: Number(cordinates.lng),
 	};
-	console.log(defaultCenter)
-
-	console.log(selectedCenter);
 
 	return (
 		<div>
@@ -36,10 +32,10 @@ const Mapview = ({ data,cordinates }) => {
 					center={defaultCenter}
 					streetViewControl={false}
 					onClick={() => setSelectedCenter(null)}>
-					{data.map(station => {
+					{data?.map(station => {
 						const position = {
-							lat: parseFloat(station.location.coordinates.latitude),
-							lng: parseFloat(station.location.coordinates.longitude),
+							lat: parseFloat(station?.location?.coordinates?.latitude),
+							lng: parseFloat(station?.location?.coordinates?.longitude),
 							// lat: parseFloat('10.1765776'),
 							// lng: parseFloat('76.3724106'),
 						};

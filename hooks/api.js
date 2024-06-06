@@ -88,10 +88,45 @@ async function fetchStationData(id) {
 		throw new Error(`Network response was not ok: ${response.status} - ${errorDetails}`);
 	}
 
-	console.log(response)
-
 	return response.json(); // Assuming the server returns JSON
 
+}
+
+export function useStationsMap({ isGoec, state, city }) {
+	return useQuery(
+		[ isGoec, state, city], // Array of dependencies to uniquely identify and cache the query
+		() => {
+
+			const url = new URL('https://panel-api.goecworld.com/api/v1/station/getall-map');
+
+			// Create a new instance of URLSearchParams
+			const params = new URLSearchParams();
+
+			// Conditionally add parameters only if they have meaningful values
+			if (isGoec !== undefined && isGoec !== null) params.append('goecOnly', isGoec ? 'true' : 'false');
+			if (state && state.trim() !== '') params.append('state', state.toLowerCase());
+			if (city && city.trim() !== '') params.append('city', city);
+			url.search = params.toString();
+
+
+			const headers = {
+				'Content-Type': 'application/json',
+				'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmRlNDZiMjRhOTk4MGJlYjg3ZGY5NyIsImlhdCI6MTcxNDQwMjEyNCwiZXhwIjoxNzE2OTk0MTI0fQ.LDgwU1rzbt7D-XMBGLGuZ2ECXhxR5tS3huuZO4AQL5o' // Replace YOUR_API_TOKEN with the actual token
+			};
+
+			return fetch(url, { method: 'GET', headers }).then(res => {
+				if (!res.ok) {
+					throw new Error(`Network response was not ok: ${res.status}`);
+				}
+				return res.text();
+			});
+		},
+		{
+			keepPreviousData: true, // Example option: keep previous data until new data is fetched
+			staleTime: 5000, // Time in milliseconds after which a fresh background refetch is triggered
+			cacheTime: 60000, // How long the query data is cached in memory
+		}
+	);
 }
 
 export function useStations({ page, limit, isGoec, state, city }) {
@@ -114,8 +149,6 @@ export function useStations({ page, limit, isGoec, state, city }) {
 			url.search = params.toString();
 
 
-			console.log(url);
-
 			const headers = {
 				'Content-Type': 'application/json',
 				'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmRlNDZiMjRhOTk4MGJlYjg3ZGY5NyIsImlhdCI6MTcxNDQwMjEyNCwiZXhwIjoxNzE2OTk0MTI0fQ.LDgwU1rzbt7D-XMBGLGuZ2ECXhxR5tS3huuZO4AQL5o' // Replace YOUR_API_TOKEN with the actual token
@@ -132,8 +165,6 @@ export function useStations({ page, limit, isGoec, state, city }) {
 			keepPreviousData: true, // Example option: keep previous data until new data is fetched
 			staleTime: 5000, // Time in milliseconds after which a fresh background refetch is triggered
 			cacheTime: 60000, // How long the query data is cached in memory
-			onError: (error) => console.error('Error fetching stations:', error),
-			onSuccess: (data) => console.log('Fetched stations:', JSON.parse(data))
 		}
 	);
 }

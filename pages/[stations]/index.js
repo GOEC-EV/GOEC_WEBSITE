@@ -23,7 +23,6 @@ export default function Index() {
 
 			const states = State.getStatesOfCountry('IN');
 			const stateMatch = states.find(state => `ev-charging-stations-in-${state.name.replace(/[ -]+/g, '-').toLowerCase()}` === stations.toLowerCase());
-			console.log(states)
 			if (stateMatch) {
 				setState(stateMatch.name);
 

@@ -4,11 +4,16 @@ const useStationStore = create((set) => ({
     stations: [], // Array of all stations
     selectedStation: {}, // Currently selected station
     filtered_stations:[],
+    map_station: [],
 
     // Function to set the entire list of stations
     setStations: (stations) => set({ 
         stations: stations,
         filtered_stations: stations,
+     }),
+
+     setMapStation: (stations) => set({
+        map_station: stations
      }),
 
     // filter by socket type

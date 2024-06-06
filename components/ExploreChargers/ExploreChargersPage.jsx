@@ -8,7 +8,7 @@ import { State, City } from 'country-state-city';
 import { useRouter } from 'next/router';
 import { CgPushChevronLeft, CgPushChevronRight, CgChevronLeft, CgChevronRight } from 'react-icons/cg';
 import Head from 'next/head';
-import { useStations } from '@/hooks/api';
+import { useStations, useStationsMap } from '@/hooks/api';
 import Mapview from '../Mapview/Mapview';
 import useStationStore from '@/stores/stationStore';
 
@@ -30,19 +30,24 @@ export default function ExploreChargersPage({ state, city ,cordinates}) {
 
     const [cities, setCities] = useState([]);
 
-    const { filtered_stations, setStations, filterBySocket, filterByVehicle, filterByCity } = useStationStore();
+    const { filtered_stations, setStations, filterBySocket, filterByVehicle, filterByCity, setMapStation, map_station } = useStationStore();
 
     const stationsApi = useStations({ page, limit, search, isGoec, vehicle, socket, state: stateInput, city: selectedCity });
+
+    const stationsMapApi = useStationsMap({ isGoec, state: stateInput, city: selectedCity });
 
     useEffect(() => {
         let isMounted = true;
         if (isMounted && stationsApi.data) {
             setStations(JSON.parse(stationsApi.data));
         }
+        if (isMounted && stationsMapApi.data) {
+            setMapStation(JSON.parse(stationsMapApi.data));
+        }
         return () => {
             isMounted = false;
         };
-    }, [stationsApi.data]);
+    }, [stationsApi.data, stationsMapApi.data]);
 
     useEffect(() => {
         if (state) {
@@ -215,7 +220,7 @@ export default function ExploreChargersPage({ state, city ,cordinates}) {
                 </div>
                 {open ? (
                     <div className='py-5 pb-32'>
-                        <Mapview data={filtered_stations.data} cordinates={cordinates} />
+                        <Mapview data={map_station.data} cordinates={cordinates} />
                     </div>
                 ) : (
                     <div>
