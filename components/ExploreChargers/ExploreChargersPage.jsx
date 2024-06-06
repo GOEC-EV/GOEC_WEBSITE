@@ -12,7 +12,7 @@ import { useStations } from '@/hooks/api';
 import Mapview from '../Mapview/Mapview';
 import useStationStore from '@/stores/stationStore';
 
-export default function ExploreChargersPage({ state, city }) {
+export default function ExploreChargersPage({ state, city ,cordinates}) {
     const router = useRouter();
     const [open, setOpen] = useState(false);
     const [sInput, setSInput] = useState('');
@@ -215,7 +215,7 @@ export default function ExploreChargersPage({ state, city }) {
                 </div>
                 {open ? (
                     <div className='py-5 pb-32'>
-                        <Mapview data={filtered_stations.data} />
+                        <Mapview data={filtered_stations.data} cordinates={cordinates} />
                     </div>
                 ) : (
                     <div>

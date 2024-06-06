@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import encodeTitle from '@/utilities/encodeTitle';
 
-const Mapview = ({ data }) => {
+const Mapview = ({ data,cordinates }) => {
 	console.log('data', data);
 	const { asPath } = useRouter();
 	const [selectedCenter, setSelectedCenter] = useState(null);
@@ -20,9 +20,10 @@ const Mapview = ({ data }) => {
 	};
 
 	const defaultCenter = {
-		lat: 10.013938,
-		lng: 76.311999,
+		lat: Number(cordinates.lat),
+		lng: Number(cordinates.lng),
 	};
+	console.log(defaultCenter)
 
 	console.log(selectedCenter);
 
@@ -31,7 +32,7 @@ const Mapview = ({ data }) => {
 			{isLoaded ? (
 				<GoogleMap
 					mapContainerStyle={mapStyles}
-					zoom={13}
+					zoom={8}
 					center={defaultCenter}
 					streetViewControl={false}
 					onClick={() => setSelectedCenter(null)}>
