@@ -4,14 +4,14 @@ import { HiOutlineCurrencyRupee } from 'react-icons/hi';
 
 export default function SocketTypeCard({ data }) {
 	const sockets = {
-		'CSS': '/images/chargers/sockets/css.svg',
+		'CCS': '/images/chargers/sockets/css.svg',
 		'CHAdeMO': '/images/chargers/sockets/chademo.svg',
 		'GB/T Gun': '/images/chargers/sockets/gbt-gun.svg',
 		'Type 2': '/images/chargers/sockets/type-2.svg',
 		'16 Amp Socket': '/images/chargers/sockets/16-amp-socket.svg',
-		'AC Type 1 ': '/images/chargers/sockets/ac-type-1.svg',
+		'AC Type 1': '/images/chargers/sockets/ac-type-1.svg',
 	};
-
+console.log('sdasdd',data)
 	return (
 		<div className={styles.cardBody}>
 			<div className={styles.cardIconSvg}>
