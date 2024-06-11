@@ -4,8 +4,8 @@ import { HiOutlineCurrencyRupee } from 'react-icons/hi';
 
 export default function SocketTypeCard({ data }) {
 	const sockets = {
-		CSS: '/images/chargers/sockets/css.svg',
-		CHAdeMO: '/images/chargers/sockets/chademo.svg',
+		'CSS': '/images/chargers/sockets/css.svg',
+		'CHAdeMO': '/images/chargers/sockets/chademo.svg',
 		'GB/T Gun': '/images/chargers/sockets/gbt-gun.svg',
 		'Type 2': '/images/chargers/sockets/type-2.svg',
 		'16 Amp Socket': '/images/chargers/sockets/16-amp-socket.svg',

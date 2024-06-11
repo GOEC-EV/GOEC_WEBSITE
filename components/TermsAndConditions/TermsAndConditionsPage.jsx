@@ -146,7 +146,7 @@ export default function TermsAndConditionsPage() {
 								<span>
 									Provided that you are eligible to use the Site, you are granted a limited license to access
 									and use the Site, as well as to download or print a copy of any portion of the Content to
-									which you have lawfully gained access, exclusively for your own personal, non-commercial use.
+									which you have lawfully gained access, exclusively for your own personal use.
 									This is granted as long as you are eligible to use the Site. We reserve all ownership rights
 									to the Site, the Content, and the Marks that are not specifically granted to you.
 								</span>

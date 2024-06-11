@@ -26,7 +26,7 @@ export default function ChargerOverviewPage() {
 		}
 	}, [data]);
 
-	console.log(selectedStation);
+	console.log('dsad',selectedStation);
 
 	function parseUrl() {
 		const splitted = router.asPath.split('/');
