@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
+		"start": "NODE_TLS_REJECT_UNAUTHORIZED=0 next start",
 		"lint": "next lint",
 		"format:fix": "prettier --write ./**/*.{js,jsx,ts,tsx,json,css,scss}",
 		"format:check": "prettier --check ./**/*.{js,jsx,ts,tsx,json,css,scss}"
